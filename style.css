@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    font-family: "Rubik", sans-serif;
+}
+.nav{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+margin-left: 3vw;
+    
+}
+.circle{
+    height: 1.5vw;
+    width: 1.5vw;
+    background-color: black;
+    border-radius: 50%;
+}
+.nav-right{
+    display: flex;
+    gap: 2vw;
+    padding: 0 3vw;
+}
+.nav-right h4{
+    font-weight: 500;
+    font-size: 1vw;
+}
+.nav-right h4 span{
+    color: rgb(123, 122, 122);
+    padding: 0 1.2vw;
+}
+.nav2{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav2 h4{
+    padding: 0 1.5vw;
+    font-weight: 400;
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+.content{
+    width: 100%;
+    height: calc(100% - 110px);
+}
+.content-top{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-wrap:nowrap;
+    overflow-x: auto;
+    
+}
+
+.content-top::-webkit-scrollbar{
+background-color: transparent;
+height: 2vh;
+}
+.content-top::-webkit-scrollbar-thumb{
+    background-color: tomato;
+    border-radius: 25px;
+}
+.text-data{
+    flex-shrink: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-data h1{
+    font-size: 6vw;
+    font-weight: 100;
+}
+.content-bottom{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+.content-bottom img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width:600px) {
+    .circle{
+        height: 4vw;
+        width: 4vw;
+    }
+    .nav-right{
+        display: flex;
+        gap: 5vw;
+        padding: 0 2vw;
+    }
+    .nav-right h4{
+        font-weight: 500;
+        font-size: 2.5vw;
+    }
+    .nav-right h4 span{
+        color: rgb(123, 122, 122);
+        padding: 0 1vw;
+    }
+   
+    .nav2 h4{
+        margin-left: 1.6vw;
+        padding: 0 1.5vw;
+        font-size: 2.5vw;
+       
+    }
+    .content-top{
+        height: 50%;
+    
+    }
+    .content-top::-webkit-scrollbar{
+    height: 1.2vh;
+    }
+
+    .text-data h1{
+        font-size: 8vw;
+    }
+    .content-bottom{
+        height: 50%;
+    
+    }
+
+}
